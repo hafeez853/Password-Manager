@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OnePass</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="one">ONE</string>
+    <string name="pass">PASS</string>
+    <string name="bottom_line">The only password manager youll ever needs</string>
+    <string name="securePass">Generate Secure Passwords.</string>
+
+</resources>

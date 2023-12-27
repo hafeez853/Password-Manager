@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="Base.Theme.OnePass" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/neutral_dark</item>
+    </style>
+
+    <style name="Theme.OnePass" parent="Base.Theme.OnePass" />
+</resources>
