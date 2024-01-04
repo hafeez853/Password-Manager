@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/_10sdp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Absent Players"
+                android:textColor="@color/red"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="@dimen/_18sdp" />
+
+            <TextView
+                android:id="@+id/absText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Absent"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/heading"/>
+            <AutoCompleteTextView
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textfield_shape"
+                android:padding="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableRight="@drawable/down_errow"
+                app:layout_constraintTop_toBottomOf="@id/absText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:hint="Peter"
+                android:textColorHint="@color/black"
+                android:layout_marginHorizontal="@dimen/_10sdp"/>
+            <TextView
+                android:id="@+id/rodeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Rode"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editText1"/>
+            <AutoCompleteTextView
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/rodeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:drawableRight="@drawable/down_errow"
+                android:hint="Study"
+                android:background="@drawable/textfield_shape"
+                android:padding="@dimen/_15sdp"
+                android:textColorHint="@color/black"
+                android:layout_marginHorizontal="@dimen/_10sdp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/registerBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="16dp"
+                android:text="Cancel"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_10sdp"
+                android:fontFamily="@font/nunito_semibold"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/textfield_shape"
+                android:textColor="@color/dark_black"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/logInBtn"
+                app:layout_constraintEnd_toStartOf="@+id/logInBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/logInBtn"
+                style="@style/AppSolidButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/gradient_btn_shape"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Ok"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/registerBtn"
+                app:layout_constraintTop_toBottomOf="@id/editText2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>
